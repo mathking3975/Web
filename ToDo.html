@@ -1,0 +1,51 @@
+<html>
+
+<head>
+    <title>TodoList</title>
+    <script src="./index.js"></script>
+    <style>
+        .todo-list {
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+        }
+
+        .item {
+            display: flex;
+            border: 1px solid #7A7A7A;
+            border-radius: 5px;
+            margin: 8px 0px;
+            width: 300px;
+            height: 30px;
+            background-color: lightblue;
+        }
+
+        .item > .title {
+            padding-top: 5px;
+            padding-left: 5px;
+            flex: 1;
+        }
+
+        .item > .remove {
+            width: 10px;
+            border-radius: 5px;
+            background-color: pink;
+            transition: 0.1s;
+
+        }
+
+        .item > .remove:hover {
+            background-color: red;
+        }
+    </style>
+</head>
+    
+<body>
+    <input id="input_title" />
+    <input class="button" type="button" value="create" onclick="onClickCreateButton();"/>
+    <div class="todo-list">
+    </div>
+    
+</body>
+
+</html>
